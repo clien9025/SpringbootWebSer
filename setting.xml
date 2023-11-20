@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <servers>
+        <server>
+            <id>ossrh</id>
+            <username>zhanyangsonotype</username>
+            <password>zycnm1314LOL</password>
+        </server>
+    </servers>
+
+    <profiles>
+        <profile>
+            <id>ossrh</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!--这里填你安装的GnuPG位置-->
+                <gpg.executable>/Applications/GPG Keychain.app</gpg.executable>
+                <gpg.passphrase>zycnm1314LOL</gpg.passphrase>
+                <!--这里填你秘钥在磁盘上的位置,可通过上面步骤的 gpg -list-keys找到-->
+                <gpg.homedir>/Users/apple/.gnupg/pubring.kbx</gpg.homedir>
+            </properties>
+        </profile>
+    </profiles>
+
+</settings>
