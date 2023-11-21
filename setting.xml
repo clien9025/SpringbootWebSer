@@ -3,11 +3,13 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
 
+    <!--    server 中的设置是配置在 maven 的 setting 文件中的,不需要配置在 xml 文件中
+    其中的 id 标签中的值应该与 pom 文件中的 distributionManagement 标签中的 id 值要相等-->
     <servers>
         <server>
             <id>ossrh</id>
-            <username>zhanyangsonatype</username>
-            <password>zycnm1314LOL!</password>
+            <username>sona的登录账户</username>
+            <password>sona的登录密码</password>
         </server>
     </servers>
 
