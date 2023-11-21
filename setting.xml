@@ -13,7 +13,7 @@
 
     <profiles>
         <profile>
-            <id>ossrh</id>
+            <id>gpg-sign</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
